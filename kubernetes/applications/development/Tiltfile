@@ -1,0 +1,9 @@
+include('/Users/laurent.friboulet/personal/config-service/Tiltfile')
+include('/Users/laurent.friboulet/personal/edge-service/Tiltfile')
+include('/Users/laurent.friboulet/personal/dispatcher-service/Tiltfile')
+include('/Users/laurent.friboulet/personal/order-service/Tiltfile')
+include('/Users/laurent.friboulet/personal/catalog-service/Tiltfile')
+
+update_settings(max_parallel_updates=1)
+
+
