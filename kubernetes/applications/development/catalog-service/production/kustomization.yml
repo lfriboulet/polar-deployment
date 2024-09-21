@@ -2,7 +2,7 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-  - github.com/lfriboulet/catalog-service/k8s?ref=main
+- github.com/lfriboulet/catalog-service/k8s?ref=main
 
 patchesStrategicMerge:
 - patch-env.yml
@@ -18,7 +18,7 @@ configMapGenerator:
 images:
 - name: catalog-service
   newName: ghcr.io/lfriboulet/catalog-service
-  newTag: fc382c42eadbf58a80abf251c8dd259639bad236
+  newTag: 47e7f30c618a8ec8ab1a5e9b22c50c3d9fad029e
 
 replicas:
 - count: 2
